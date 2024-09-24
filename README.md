@@ -15,6 +15,7 @@ TFF1 (Trefoil Factor 1)
 These biomarkers provide a non-invasive method for detecting PDAC using advanced algorithms.
 
 Methodology
+
 Our approach involves the following steps:
 
 Data Cleaning & Normalization: Preprocessing the data to ensure consistency and to prevent issues like model sensitivity due to varying data scales.
@@ -25,19 +26,26 @@ Random Forest
 XGBoost
 ExtraTree
 LightGBM
+
 Ensemble Model Configurations:
+
 3C2 Ensemble Model: Combines 3 models where at least 2 must agree on the classification.
 4C3 Ensemble Model: Combines 4 models where at least 3 must agree on the classification.
 Correlation Analysis: Computation of correlation matrices between biomarkers and PDAC risk to create binary classifications.
 Cross-validation: We use K-fold cross-validation to ensure robust model performance evaluation.
+
 Dataset
+
 The dataset is sourced from PLOS Medicine and consists of 590 samples with various attributes such as patient age, gender, serum creatinine levels, and biomarker concentrations.
 
 Challenges
+
 Small Dataset: Limited data can lead to overfitting, which requires careful model selection.
 Biomarker Variability: Differences in biomarker expression across patients can affect model generalizability.
 Medical Expertise: As Computer Science students, our knowledge of medical intricacies is limited, which highlights the need for collaboration with healthcare professionals.
+
 Future Directions
+
 Expanding the dataset to improve the robustness of the models.
 Fine-tuning the models for better accuracy and generalization.
 Validating the results with clinical trials.
